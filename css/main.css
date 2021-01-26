@@ -47,10 +47,15 @@ h2 {
   display: block;
 }
 
+.problems .problems-title-orange {
+  display: inline;
+  color: #ff6b09;
+}
+
 .problems-title-container {
   position: relative;
   height: 545px;
-  padding-top: 50px;
+  padding: 51px 20px 15px 20px;
   background-color: var(--background-color);
 }
 
@@ -62,21 +67,21 @@ h2 {
   height: 128px;
 }
 
-.problems-blank-container {
-  display: block;
-  background-color: red;
-  height: 148px;
-}
-
 .problems-set-container {
+  outline: 2px solid teal;
   position: absolute;
-  top: 38%;
-  left: 6%;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
   width: 280px;
-  height: 488px;
   background: #ffffff;
   -webkit-box-shadow: -5px 8px 26px rgba(0, 0, 0, 0.04);
           box-shadow: -5px 8px 26px rgba(0, 0, 0, 0.04);
+}
+
+.problems-set {
+  padding: 20px 14px 20px 30px;
 }
 
 .problems-set__item {
@@ -86,13 +91,14 @@ h2 {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.08em;
-  padding: 20px 14px 20px 30px;
+  margin-bottom: 10px;
   color: var(--primary-text-color);
 }
 
 .problems-set__item::before {
-  display: inline-block;
+  display: block;
   content: "";
+  margin-bottom: 5px;
   font-family: Montserrat;
   font-style: normal;
   font-weight: bold;
@@ -101,7 +107,7 @@ h2 {
   letter-spacing: 0.08em;
   color: #ff6b09;
   counter-increment: problem-number;
-  content: "— " counter(problem-number) " ";
+  content: "— 0" counter(problem-number) " ";
 }
 
 :root {
