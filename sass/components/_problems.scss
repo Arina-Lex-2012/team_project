@@ -54,6 +54,8 @@ h2 {
 .problems {
   position: relative;
 
+  background-color: var(--background-color);
+
   & span {
     display: block;
   }
@@ -65,19 +67,7 @@ h2 {
 }
 
 .problems-title-container {
-  // height: 545px;
-
   padding: 51px 20px 366px 20px;
-
-  background-color: var(--background-color);
-
-  & h2 {
-    width: 280px;
-  }
-}
-
-.problems-title {
-  height: 128px;
 }
 
 // PROBLEMS SET
@@ -87,7 +77,6 @@ h2 {
   position: absolute;
   top: 38%;
   left: 6%;
-  // transform: translate(-38%, -6%);
   // top: 50%;
   // left: 50%;
   // transform: translate(-50%, -50%);

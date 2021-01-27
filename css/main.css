@@ -45,6 +45,7 @@ h2 {
 
 .problems {
   position: relative;
+  background-color: var(--background-color);
 }
 
 .problems span {
@@ -58,15 +59,6 @@ h2 {
 
 .problems-title-container {
   padding: 51px 20px 366px 20px;
-  background-color: var(--background-color);
-}
-
-.problems-title-container h2 {
-  width: 280px;
-}
-
-.problems-title {
-  height: 128px;
 }
 
 .problems-set-container {
